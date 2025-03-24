@@ -4,7 +4,7 @@ public class Fight {
     Persrnazh persU;
     Persrnazh persM;
 
-    final int time = 300;
+    final int time = 700;
     static boolean flagPers = true;
 
     public Fight(Persrnazh monster, Persrnazh gamer) {

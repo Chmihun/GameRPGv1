@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class Game {
-    Persrnazh gamer = new Gamer(1, 150, 30, 4, 50, 300);
+    Persrnazh gamer = new Gamer("DefaultName",1, 150, 30, 4, 50, 300);
     //**************************************************************************************************
 //    Persrnazh pers1 = new Skeleton(1, 150, 3, 4, 50, 500);
 //    Persrnazh pers2 = new Goblin(1, 200, 35, 4, 50, 500);

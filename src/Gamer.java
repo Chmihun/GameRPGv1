@@ -5,14 +5,16 @@ import java.util.Scanner;
 public class Gamer extends Persrnazh {   //игрок
     private List<Integer> invenary = new ArrayList<>(List.of(0, 0, 0, 0, 0));
 
-    public Gamer(int level, int life, int strength, int dexterity, int experience, int gold) {
-        super("GAMER", level, life, strength, dexterity, experience, gold);
-//        for (int i = 0; i < 5; i++) {
-//            invenary.add(0);  // 0 означает, что предмет еще не куплен
-//        }
-//        invenary.get(0);
+    public Gamer(String name,int level, int life, int strength, int dexterity, int experience, int gold) {
+        super(name, level, life, strength, dexterity, experience, gold);
+
+    this.name=name;
     }
 
+//    @Override
+//    public String getName() {
+//        return name;
+//    }
 
     public void drink(int addlife) {
 

@@ -86,7 +86,7 @@ public class Dealer {//торговец
                         ((Gamer) gamer).addInventar(2, 1);//кальчуга
                         System.out.println("Вы купили кальчугу");
                         gamer.setGold(gamer.getGold() - map.get(armor));
-                        gamer.setLevel(gamer.getLife() + 50);
+                        gamer.setLife(gamer.getLife() + 50);
                     } else System.out.println("НЕ хватвет золота");
                 }
                 showcase();
