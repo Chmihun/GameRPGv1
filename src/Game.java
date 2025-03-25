@@ -29,12 +29,14 @@ public class Game {
             flag = true;
 
             if (gamer.life > 0) {
-                System.out.println(" \nТЫ ПОБЕДИЛ  !!!!\nКуда пойдем дальше?");
                 if (!humiliation) {
                     int newExperience = gamer.experience;
                     newExperience += enemy.getMaxLife();
                     gamer.setExperience(newExperience);
                     ((Gamer) gamer).lavelUp();
+                    System.out.println(" \nТЫ ПОБЕДИЛ  !!!!");
+                    System.out.println("Вы нашли на трупе Монстра "+enemy.gold+ " монет золотом");
+                    System.out.println("\nКуда пойдем дальше?");
                     int newGold = enemy.gold + gamer.gold;
                     gamer.setGold(newGold);
 
